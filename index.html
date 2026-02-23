@@ -1,1 +1,73 @@
-<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vR9bGyL0gfrLR4UzLZsqak_y8FY_RCVj7K8n75qnp43ni0i-p6LzRQUsFqDey4qAg/pubchart?oid=89369672&amp;format=interactive"></iframe>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Student Performance Chart</title>
+
+<style>
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f4f7fb;
+    margin: 0;
+    padding: 40px;
+  }
+
+  .chart-section {
+    max-width: 1000px;
+    margin: auto;
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 14px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  }
+
+  .chart-title {
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #2c3e50;
+  }
+
+  .chart-wrapper {
+    position: relative;
+    width: 100%;
+    padding-top: 60%; /* responsive height */
+    border-radius: 10px;
+    overflow: hidden;
+  }
+
+  .chart-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+  }
+
+  /* Mobile friendly */
+  @media (max-width: 600px) {
+    body {
+      padding: 15px;
+    }
+
+    .chart-title {
+      font-size: 22px;
+    }
+  }
+</style>
+</head>
+
+<body>
+
+<div class="chart-section">
+  <div class="chart-title">📊 Student Performance Overview</div>
+
+  <div class="chart-wrapper">
+    <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vR9bGyL0gfrLR4UzLZsqak_y8FY_RCVj7K8n75qnp43ni0i-p6LzRQUsFqDey4qAg/pubchart?oid=89369672&amp;format=interactive"></iframe>
+  </div>
+</div>
+
+</body>
+</html>
